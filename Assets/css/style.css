@@ -1,21 +1,139 @@
 * {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
+    background-color: antiquewhite;
     margin: 0;
-    font-size: large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+ }
+ 
+ #timer {
+    font-size: smaller;
+    padding-right: 20px;
+    float: right;
 }
 
-div {
+ #container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    background-color: antiquewhite;
-    padding: 20px;
-}
+    text-align: left; 
+    font-size: 30px;
+    padding: 15px;
+    
+  }
 
-.start {
-    width: 200px;
-    background-color: plum;
-}
+
+ .btn {
+     background-color: rgb(243, 50, 12);
+     color: rgb(5, 1, 1);
+     border-radius: 5px;
+     padding: 3px;
+ }
+ .btn:hover, .ans-btn:hover,  #submit-btn:hover {
+     background-color:rgb(33, 245, 82) ;    
+ }
+
+ #question {
+     font-size: xx-large;
+ 
+ }
+ 
+ #answer-buttons {
+     display: block;
+     justify-content: left;
+     text-align: left;
+     gap: 10px;
+     
+     
+ }
+ 
+ .ans-btn{
+     margin: 10px auto;
+     padding: 10px 10px;
+     background-color: rgb(238, 62, 13);
+     color: rgb(17, 3, 3);
+     border-radius: 10px;
+     border: 0;
+     display: grid;
+ 
+     
+ }
+ 
+ .ans-btn:hover {
+     background-color:rgb(255, 13, 9) ;
+ }
+ 
+ #result-section {
+     display: inline-block;
+     margin: 10px;
+     font-size: 20px;
+     width: 100%;
+     color: rgb(80, 216, 7);
+ }
+ 
+ .start-btn {
+     top: 20%;
+     left: 46%;
+     width: 100px;
+     height: 40px;
+     font-size: 20px;
+     border-radius: 10px;
+     background-color: rgb(254, 5, 1) ;
+     color: rgb(10, 0, 0);
+     margin: 20px 0; 
+     position: relative;  
+ 
+ }
+  
+
+ #first-page{
+     margin: 20px auto;
+     width: 70%;
+     top: 50%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     text-align: center;
+     font-size: 20px;
+     padding: 50px;
+     flex-direction: column;
+ }
+ 
+ #last-page{
+     margin: 20px auto;
+     width: 100%;
+     top: 50%;
+     display: inline-block;
+     flex-wrap: wrap;
+     justify-content: center;
+     text-align: center;
+     font-size: 20px;
+     padding: 50px;
+ }
+ 
+ #submission {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     padding: 10px auto;
+ }
+ 
+ #submit-btn {
+     background-color: rgb(117, 65, 28) ;
+     border-radius: 5px;
+     color: white;
+     padding: 3px;
+     
+ }
+ 
+
+ 
+
+ 
+ 
+ 

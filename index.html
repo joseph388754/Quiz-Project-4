@@ -1,23 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>JavaScript Quiz</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./Assets/css/style.css">
-    </head>
-    <body>
-        <a href="highscore.html"><h2>View Highscore</h2></a>
-        <h5>Timer:</h5>
-        
-        <div>
-            <h3>Coding Quiz Challenge</h3>
-            <h4>Try to answer the question as fast as you can to set your highes score</h4>
-            <button class="start">Start Quiz</button>
-        </div>
-      
-        <script src="./Assets/js/script.js" ></script>
-    </body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML CSS Quiz</title>
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+   
+  </head>
+  <body>
+   
+    
+    
+    <div class="myhighscores"><a href="highscore.html">High Scores</a></div>
+    <div id="timer">Time: </div>
+    
+    <div id="container">
+         <div id="question">Question</div>
+         <div id="choice-buttons">
+            <button id="choice-a" class="ans-btn btn" onclick="checkAnswer(event)">Answer A</button>
+            <button id="choice-b" class="ans-btn btn" onclick="checkAnswer(event)">Answer B</button>
+            <button id="choice-c" class="ans-btn btn" onclick="checkAnswer(event)">Answer C</button>
+            <button id="choice-d" class="ans-btn btn" onclick="checkAnswer(event)">Answer D</button>
+        </div>  
+
+        <div id="result-section">
+            <p id="results"></p>
+        </div>    
+    </div>
+    
+    <div id="first-page">
+        <h1 class=>BASIC HTML & CSS Quiz</h1>
+        <p>Are you ready to test your basic knowledge in HTML & CSS?</p>
+        <button id="begin-btn" class= "begin-btn btn">Begin Quiz</button>
+    </div>
+
+    
+    <div id ="last-page">
+       <h1>Good Job!</h1>
+       <h2 id="final-score">Your Score!</h2>
+       <form action ="submit">Enter Initials</form>
+       <div id="submission">
+       <input type="text">
+       <button id="submit-btn">Submit</button></div>
+    </div>
+    
+    <div id="highscores">
+        <h1>High Scores</h1>
+        <ol id="high-scores"></ol>
+        <button id="back-btn" class="btn">Go back</button>
+        <button id="clear-scores-btn" class="btn">Clear high scores</button>
+
+    </div>
+
+    <script defer src="./Assets/js/script.js"></script>
+  </body>
 </html>
